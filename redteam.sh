@@ -86,7 +86,7 @@ save_original_state() {
 
     CURRENT_DATE="$(date -u -d "@$ORIGINAL_EPOCH" '+%Y-%m-%d %H:%M:%S')"
 
-    TARGET_DATE="$(date -u -d "$CURRENT_DATE + 100 years" '+%Y-%m-%d %H:%M:%S')"
+    TARGET_DATE="$(date -u -d "$CURRENT_DATE + 1 year" '+%Y-%m-%d %H:%M:%S')"
 
     if [[ -z "$TARGET_DATE" ]]; then
         echo "[!] Could not calculate target date."
