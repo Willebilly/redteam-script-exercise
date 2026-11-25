@@ -337,7 +337,7 @@ change_system_time() {
 
     timedatectl set-ntp false
 
-    log "Changing system time 100 years into the future."
+    log "Changing system time 1 years into the future."
 
     date -u -s "$TARGET_DATE" >/dev/null
 
